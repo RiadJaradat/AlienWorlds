@@ -12,6 +12,9 @@ class ResourceManager
 {
 private:
     ResourceManager() = delete;
+
+    const static inline sf::Vector2i tileSize = sf::Vector2i(64, 64);
+
 public:
 
     // images:
@@ -30,5 +33,15 @@ public:
         lightShader.loadFromFile(ASSETSFOLDER "shaders/light_shader.frag", sf::Shader::Fragment);
     
         OpenUI.loadFromFile(ASSETSFOLDER "SoundEffects/UI.wav");
+    }
+
+    static sf::Texture getTile(const sf::Texture &Tileset, const sf::Vector2i& index)
+    {
+        sf::Texture subText;
+        subText.create(tileSize.x, tileSize.y);
+
+        subText.update(Tileset, index.x * tileSize.x, index.y * tileSize.y);
+
+        return subText;
     }
 };
