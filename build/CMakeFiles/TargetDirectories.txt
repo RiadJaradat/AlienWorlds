@@ -1,0 +1,3 @@
+/home/rjaradat/Projects/AlianWorlds/build/CMakeFiles/AlianWorlds.dir
+/home/rjaradat/Projects/AlianWorlds/build/CMakeFiles/edit_cache.dir
+/home/rjaradat/Projects/AlianWorlds/build/CMakeFiles/rebuild_cache.dir
