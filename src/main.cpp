@@ -2,6 +2,8 @@
 #include <memory>
 #include <iostream>
 
+#include "imgui.h"
+#include "imconfig-SFML.h"
 #include "ResourceManager.hpp"
 #include "SceneManager.hpp"
 #include "inputManager.hpp"
@@ -17,10 +19,10 @@ int main()
 
     ResourceManager::loadResources();
 
+    Renderer renderer(window);
     SceneManager sceneManager;
     InputManager inputManager;
     AudioManager audioManager;
-    Renderer renderer(window);
 
     window.setVerticalSyncEnabled(true);
 
@@ -37,6 +39,7 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
 
+            ImGui::SFML::ProcessEvent(event);
             inputManager.handleEvent(event);
             sceneManager.handleEvent(event);
         }
@@ -44,13 +47,16 @@ int main()
         inputManager.update();
         sceneManager.update(inputManager, audioManager, dt);
         audioManager.update();
-
+        ImGui::SFML::Update(window, deltaClock.restart());
+        
         renderer.beginFrame();
 
         sceneManager.render(renderer);
 
         renderer.endFrame();
     }
+
+    ImGui::SFML::Shutdown();
 
     return 0;
 }

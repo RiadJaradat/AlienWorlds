@@ -18,6 +18,9 @@ AlianWorlds
  /usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so
  /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so
  /usr/lib64/libFLAC.so.14
+ /usr/lib64/libGLX.so
+ /usr/lib64/libGLdispatch.so.0
+ /usr/lib64/libOpenGL.so
  /usr/lib64/libX11.so.6
  /usr/lib64/libXau.so.6
  /usr/lib64/libXcursor.so.1
@@ -50,17 +53,23 @@ AlianWorlds
  /usr/lib64/libxcb.so.1
  /usr/lib64/libz.so.1
  /home/rjaradat/Projects/AlianWorlds/build/CMakeFiles/AlianWorlds.dir/src/main.cpp.o
+ /home/rjaradat/Projects/AlianWorlds/build/libimgui_lib.a
 
 CMakeFiles/AlianWorlds.dir/src/main.cpp.o
  /home/rjaradat/Projects/AlianWorlds/src/main.cpp
+ /home/rjaradat/Projects/AlianWorlds/imgui/imconfig-SFML.h
+ /home/rjaradat/Projects/AlianWorlds/imgui/imconfig.h
+ /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML.h
+ /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML_export.h
+ /home/rjaradat/Projects/AlianWorlds/imgui/imgui.h
  /home/rjaradat/Projects/AlianWorlds/include/AudioManager.hpp
  /home/rjaradat/Projects/AlianWorlds/include/GameWorld.hpp
  /home/rjaradat/Projects/AlianWorlds/include/Light.hpp
  /home/rjaradat/Projects/AlianWorlds/include/Renderer.hpp
- /home/rjaradat/Projects/AlianWorlds/include/ResorceManager.hpp
+ /home/rjaradat/Projects/AlianWorlds/include/ResourceManager.hpp
+ /home/rjaradat/Projects/AlianWorlds/include/Scene.hpp
+ /home/rjaradat/Projects/AlianWorlds/include/SceneManager.hpp
  /home/rjaradat/Projects/AlianWorlds/include/inputManager.hpp
- /home/rjaradat/Projects/AlianWorlds/include/scenceManager.hpp
- /home/rjaradat/Projects/AlianWorlds/include/scene.hpp
  /usr/include/SFML/Audio.hpp
  /usr/include/SFML/Audio/AlResource.hpp
  /usr/include/SFML/Audio/Export.hpp
@@ -328,6 +337,7 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o
  /usr/include/c++/15/clocale
  /usr/include/c++/15/concepts
  /usr/include/c++/15/cstddef
+ /usr/include/c++/15/cstdint
  /usr/include/c++/15/cstdio
  /usr/include/c++/15/cstdlib
  /usr/include/c++/15/ctime
@@ -402,6 +412,8 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o
  /usr/include/stdint.h
  /usr/include/stdio.h
  /usr/include/stdlib.h
+ /usr/include/string.h
+ /usr/include/strings.h
  /usr/include/sys/cdefs.h
  /usr/include/sys/select.h
  /usr/include/sys/single_threaded.h
@@ -409,6 +421,7 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o
  /usr/include/time.h
  /usr/include/wchar.h
  /usr/include/wctype.h
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/float.h
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h

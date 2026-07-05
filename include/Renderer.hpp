@@ -7,6 +7,8 @@
 
 #include "Light.hpp"
 #include "ResourceManager.hpp"
+#include "imgui.h"
+#include "imgui-SFML.h"
 
 class Renderer
 {
@@ -14,6 +16,7 @@ public:
     Renderer(sf::RenderWindow &window)
         : window(window)
     {
+        ImGui::SFML::Init(window);
         sf::Vector2u size = window.getSize();
         geometryTexture.create(size.x, size.y);
         lightTexture.create(size.x, size.y);
@@ -62,6 +65,10 @@ public:
         // Draw the lightmap on top using Multiply blending
         sf::RenderStates blendMultiply(sf::BlendMultiply);
         window.draw(lightmapSprite, blendMultiply);
+
+        
+
+        ImGui::SFML::Render(window);
 
         window.display();
     }

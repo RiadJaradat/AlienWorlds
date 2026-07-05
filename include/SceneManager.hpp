@@ -30,5 +30,6 @@ public:
     {
         assert(currentScene);
         currentScene->render(target);
+        currentScene->renderGUI();
     }
 };

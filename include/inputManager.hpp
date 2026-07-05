@@ -52,6 +52,21 @@ private:
     }
 
 public:
+    InputManager()
+    {
+        // Get the ImGui IO object
+        ImGuiIO &io = ImGui::GetIO();
+
+        // Enable Keyboard and Gamepad Navigation
+        io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;
+        io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+
+        // Map your SFML controller buttons to ImGui actions
+        // These IDs are standard ImGui defaults; you may need to adjust
+        // depending on your controller mapping.
+        io.BackendFlags |= ImGuiBackendFlags_HasGamepad;
+    }
+
     bool JoyStick = false;
 
     const float deadzone = 20.f;
@@ -61,14 +76,16 @@ public:
     {
         JoyStick = sf::Joystick::isConnected(0);
 
+        ImGuiIO &io = ImGui::GetIO();
+
         if (!JoyStick)
         {
             updateAction(Action::MoveDown, sf::Keyboard::isKeyPressed(sf::Keyboard::S));
             updateAction(Action::MoveUp, sf::Keyboard::isKeyPressed(sf::Keyboard::W));
             updateAction(Action::MoveRight, sf::Keyboard::isKeyPressed(sf::Keyboard::D));
             updateAction(Action::MoveLeft, sf::Keyboard::isKeyPressed(sf::Keyboard::A));
-            
-            updateAction(Action::Interact,  sf::Mouse::isButtonPressed(sf::Mouse::Left));
+
+            updateAction(Action::Interact, sf::Mouse::isButtonPressed(sf::Mouse::Left));
         }
         else
         {
@@ -81,6 +98,15 @@ public:
             updateAction(Action::MoveDown, (y > deadzone));
 
             updateAction(Action::Interact, sf::Joystick::isButtonPressed(JoystickID, 0));
+
+            io.NavInputs[ImGuiNavInput_Activate] = sf::Joystick::isButtonPressed(JoystickID, 0) ? 1.0f : 0.0f;
+
+            io.NavInputs[ImGuiNavInput_DpadLeft] = (x < -deadzone) ? 1.0f : 0.0f;
+            io.NavInputs[ImGuiNavInput_DpadRight] = (x > deadzone) ? 1.0f : 0.0f;
+            io.NavInputs[ImGuiNavInput_DpadUp] = (y < -deadzone) ? 1.0f : 0.0f;
+            io.NavInputs[ImGuiNavInput_DpadDown] = (y > deadzone) ? 1.0f : 0.0f;
+
+            io.NavInputs[ImGuiNavInput_Menu] = sf::Joystick::isButtonPressed(JoystickID, 7) ? 1.0f : 0.0f;
         }
     }
 

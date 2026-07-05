@@ -55,4 +55,24 @@ public:
         // renderer.submit(sprt);
         // renderer.submit(light);
     }
+
+    void renderGUI() override
+    {
+        // ImGui::Begin("Window title",
+        //     nullptr,
+        //     ImGuiWindowFlags_NoMove |
+        //     ImGuiWindowFlags_NoResize |
+        //     ImGuiWindowFlags_NoCollapse
+        // );
+        // ImGui::Text("Window Text");
+        // if (ImGui::Button("click me1!"))
+        // {
+        //     std::cout << "Clicked1" << std::endl;
+        // }
+        // if (ImGui::Button("click me2!"))
+        // {
+        //     std::cout << "Clicked2" << std::endl;
+        // }
+        // ImGui::End();
+    }
 };

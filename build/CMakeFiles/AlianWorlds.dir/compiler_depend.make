@@ -17,6 +17,9 @@ AlianWorlds: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib64/libFLAC.so.14 \
+  /usr/lib64/libGLX.so \
+  /usr/lib64/libGLdispatch.so.0 \
+  /usr/lib64/libOpenGL.so \
   /usr/lib64/libX11.so.6 \
   /usr/lib64/libXau.so.6 \
   /usr/lib64/libXcursor.so.1 \
@@ -48,17 +51,23 @@ AlianWorlds: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib64/libvorbisfile.so.3 \
   /usr/lib64/libxcb.so.1 \
   /usr/lib64/libz.so.1 \
-  CMakeFiles/AlianWorlds.dir/src/main.cpp.o
+  CMakeFiles/AlianWorlds.dir/src/main.cpp.o \
+  libimgui_lib.a
 
 CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/src/main.cpp \
+  /home/rjaradat/Projects/AlianWorlds/imgui/imconfig-SFML.h \
+  /home/rjaradat/Projects/AlianWorlds/imgui/imconfig.h \
+  /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML.h \
+  /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML_export.h \
+  /home/rjaradat/Projects/AlianWorlds/imgui/imgui.h \
   /home/rjaradat/Projects/AlianWorlds/include/AudioManager.hpp \
   /home/rjaradat/Projects/AlianWorlds/include/GameWorld.hpp \
   /home/rjaradat/Projects/AlianWorlds/include/Light.hpp \
   /home/rjaradat/Projects/AlianWorlds/include/Renderer.hpp \
-  /home/rjaradat/Projects/AlianWorlds/include/ResorceManager.hpp \
+  /home/rjaradat/Projects/AlianWorlds/include/ResourceManager.hpp \
+  /home/rjaradat/Projects/AlianWorlds/include/Scene.hpp \
+  /home/rjaradat/Projects/AlianWorlds/include/SceneManager.hpp \
   /home/rjaradat/Projects/AlianWorlds/include/inputManager.hpp \
-  /home/rjaradat/Projects/AlianWorlds/include/scenceManager.hpp \
-  /home/rjaradat/Projects/AlianWorlds/include/scene.hpp \
   /usr/include/SFML/Audio.hpp \
   /usr/include/SFML/Audio/AlResource.hpp \
   /usr/include/SFML/Audio/Export.hpp \
@@ -326,6 +335,7 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
   /usr/include/c++/15/clocale \
   /usr/include/c++/15/concepts \
   /usr/include/c++/15/cstddef \
+  /usr/include/c++/15/cstdint \
   /usr/include/c++/15/cstdio \
   /usr/include/c++/15/cstdlib \
   /usr/include/c++/15/ctime \
@@ -400,6 +410,8 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
@@ -407,12 +419,15 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
   /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/15/include/float.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
   /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h
 
 
 /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/include/float.h:
 
 /usr/include/wchar.h:
 
@@ -422,9 +437,15 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/include/sys/select.h:
 
+/usr/include/string.h:
+
 /usr/include/stdlib.h:
 
 /usr/include/stdc-predef.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
 
 /usr/include/locale.h:
 
@@ -508,6 +529,8 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/include/c++/15/cstdio:
 
+/usr/include/c++/15/cstdint:
+
 /usr/include/errno.h:
 
 /usr/include/c++/15/cstddef:
@@ -562,8 +585,6 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/include/c++/15/bits/shared_ptr_atomic.h:
 
-/usr/include/c++/15/bits/shared_ptr.h:
-
 /usr/include/c++/15/bits/requires_hosted.h:
 
 /usr/include/c++/15/bits/refwrap.h:
@@ -606,21 +627,23 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/include/c++/15/bits/locale_classes.h:
 
-/lib64/libgcc_s.so.1:
+/usr/include/c++/15/bits/invoke.h:
 
-/usr/include/SFML/System/ThreadLocalPtr.hpp:
+/usr/include/c++/15/ext/string_conversions.h:
 
-/usr/include/SFML/System/ThreadLocal.hpp:
+/usr/include/c++/15/bits/hashtable_policy.h:
+
+/usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h:
+
+/usr/include/c++/15/bits/stl_vector.h:
+
+/usr/include/c++/15/bits/functexcept.h:
 
 /usr/include/SFML/Graphics/PrimitiveType.hpp:
 
 /usr/include/SFML/System/NonCopyable.hpp:
 
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
-
-/home/rjaradat/Projects/AlianWorlds/include/scene.hpp:
+/usr/include/SFML/System/Mutex.hpp:
 
 /usr/include/SFML/System/Err.hpp:
 
@@ -632,11 +655,11 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
 
-/usr/include/SFML/Graphics/VertexArray.hpp:
-
 /usr/include/SFML/Graphics/Transform.hpp:
 
-/usr/include/SFML/System/Time.hpp:
+/usr/include/c++/15/bits/functional_hash.h:
+
+/usr/include/SFML/Graphics/RenderWindow.hpp:
 
 /usr/include/bits/types/sigset_t.h:
 
@@ -648,15 +671,9 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/include/c++/15/bits/stl_iterator.h:
 
+/home/rjaradat/Projects/AlianWorlds/include/Scene.hpp:
+
 /usr/include/SFML/Graphics/Image.hpp:
-
-/usr/include/bits/locale.h:
-
-/usr/include/c++/15/type_traits:
-
-/usr/include/SFML/Graphics/Drawable.hpp:
-
-/usr/include/SFML/System/Utf.hpp:
 
 /usr/include/SFML/Graphics/Vertex.hpp:
 
@@ -714,29 +731,35 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /home/rjaradat/Projects/AlianWorlds/include/Renderer.hpp:
 
-/usr/include/SFML/Audio/SoundBufferRecorder.hpp:
-
-/usr/include/SFML/Audio/OutputSoundFile.hpp:
-
-/usr/include/SFML/Audio/SoundFileFactory.inl:
-
-/usr/include/bits/libc-header-start.h:
-
 /usr/include/SFML/Graphics/Texture.hpp:
 
 /usr/include/SFML/Audio/InputSoundFile.hpp:
 
-/usr/include/c++/15/bits/alloc_traits.h:
+/usr/include/SFML/Graphics/Shader.hpp:
 
-/usr/lib64/libpng16.so.16:
+/usr/include/SFML/Audio/AlResource.hpp:
 
-/usr/include/c++/15/ext/numeric_traits.h:
+/usr/include/bits/typesizes.h:
 
-/usr/lib64/libc_nonshared.a:
+/usr/include/SFML/Graphics/Glsl.inl:
 
-/usr/include/SFML/Graphics/ConvexShape.hpp:
+/usr/include/stdio.h:
 
-/usr/lib64/libbz2.so.1:
+/usr/include/bits/wordsize.h:
+
+/usr/lib64/crti.o:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/libintl.h:
+
+/usr/include/SFML/System/String.hpp:
+
+/usr/include/bits/endianness.h:
+
+/home/rjaradat/Projects/AlianWorlds/include/Light.hpp:
+
+/home/rjaradat/Projects/AlianWorlds/include/GameWorld.hpp:
 
 /usr/include/c++/15/bits/range_access.h:
 
@@ -766,19 +789,49 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/lib64/crt1.o:
 
-/usr/include/c++/15/ext/string_conversions.h:
+/usr/include/strings.h:
 
-/usr/include/c++/15/bits/hashtable_policy.h:
+/usr/include/c++/15/ostream:
 
-/usr/lib64/libharfbuzz.so.0:
+/usr/include/c++/15/bits/exception.h:
 
-/usr/include/bits/types/mbstate_t.h:
+/usr/include/SFML/Graphics/View.hpp:
+
+/usr/include/SFML/Graphics/Transformable.hpp:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/15/type_traits:
+
+/usr/include/SFML/Graphics/Drawable.hpp:
+
+/usr/include/SFML/Graphics/ConvexShape.hpp:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a:
+
+/usr/include/SFML/System/Lock.hpp:
+
+/usr/include/bits/floatn.h:
 
 /usr/include/SFML/Audio/SoundSource.hpp:
+
+/home/rjaradat/Projects/AlianWorlds/include/SceneManager.hpp:
+
+/usr/lib64/libXfixes.so.3:
+
+/usr/include/c++/15/bits/char_traits.h:
 
 /usr/include/c++/15/bits/memoryfwd.h:
 
 /usr/lib64/libXcursor.so.1:
+
+/usr/lib64/libbz2.so.1:
+
+/home/rjaradat/Projects/AlianWorlds/imgui/imconfig.h:
+
+/usr/lib64/libGLdispatch.so.0:
+
+/usr/include/SFML/System/ThreadLocalPtr.hpp:
 
 /usr/include/c++/15/ios:
 
@@ -798,27 +851,27 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/lib64/libfreetype.so.6:
 
-/usr/include/SFML/System/Lock.hpp:
+/usr/include/c++/15/bits/shared_ptr.h:
 
-/usr/include/bits/floatn.h:
+/home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML.h:
 
-/usr/include/c++/15/bits/ios_base.h:
+/usr/include/c++/15/ext/numeric_traits.h:
 
-/usr/lib64/crtn.o:
+/usr/lib64/libc_nonshared.a:
 
-/usr/lib64/libfmt.so.11:
+/usr/include/SFML/Audio/SoundBufferRecorder.hpp:
 
-/usr/include/stdio.h:
+/usr/lib64/libGLX.so:
 
-/usr/include/bits/wordsize.h:
+/home/rjaradat/Projects/AlianWorlds/include/ResourceManager.hpp:
 
-/usr/lib64/crti.o:
+/usr/include/alloca.h:
 
-/usr/include/c++/15/bits/basic_string.h:
+/usr/include/c++/15/ext/alloc_traits.h:
 
-/usr/include/bits/wctype-wchar.h:
+/usr/include/SFML/Graphics/CircleShape.hpp:
 
-/usr/include/c++/15/bits/cpp_type_traits.h:
+CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 
 /usr/lib64/libm.so:
 
@@ -834,11 +887,9 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
 
-/usr/include/bits/typesizes.h:
+/usr/include/c++/15/bits/alloc_traits.h:
 
-/usr/include/SFML/Graphics/Glsl.inl:
-
-/usr/include/SFML/Audio/AlResource.hpp:
+/usr/lib64/libpng16.so.16:
 
 /usr/include/SFML/Audio/Listener.hpp:
 
@@ -848,29 +899,51 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/include/SFML/System/Vector2.inl:
 
+/lib64/ld-linux-x86-64.so.2:
+
+/usr/lib64/libXau.so.6:
+
 /usr/lib64/libcap.so.2:
 
 /usr/include/c++/15/bits/ostream_insert.h:
 
+/usr/lib64/libOpenGL.so:
+
 /usr/include/bits/types/error_t.h:
-
-/lib64/ld-linux-x86-64.so.2:
-
-/usr/lib64/libXau.so.6:
 
 /usr/include/ctype.h:
 
 /usr/lib64/libc.so:
 
+/usr/include/SFML/Audio/SoundFileFactory.inl:
+
+/usr/include/SFML/Audio/OutputSoundFile.hpp:
+
+/usr/include/bits/libc-header-start.h:
+
 /home/rjaradat/Projects/AlianWorlds/include/inputManager.hpp:
+
+/usr/include/c++/15/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o:
+
+/usr/lib64/libbrotlidec.so.1:
 
 /usr/include/bits/types/struct_sched_param.h:
 
 /usr/include/c++/15/bits/cxxabi_init_exception.h:
 
-CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
+/lib64/libgcc_s.so.1:
 
-/usr/lib/gcc/x86_64-redhat-linux/15/libgcc.a:
+/usr/include/bits/setjmp.h:
+
+/usr/include/SFML/System/Utf.inl:
+
+/usr/include/c++/15/bits/ios_base.h:
+
+/usr/lib64/crtn.o:
+
+/usr/lib64/libfmt.so.11:
 
 /usr/include/SFML/Graphics/Rect.hpp:
 
@@ -896,15 +969,11 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 
 /usr/include/bits/time64.h:
 
-/usr/include/c++/15/ext/alloc_traits.h:
-
-/usr/include/SFML/Graphics/CircleShape.hpp:
+/home/rjaradat/Projects/AlianWorlds/imgui/imgui.h:
 
 /usr/include/c++/15/initializer_list:
 
 /usr/lib64/libsfml-window.so.2.6.2:
-
-/home/rjaradat/Projects/AlianWorlds/include/scenceManager.hpp:
 
 /usr/include/SFML/Window/Export.hpp:
 
@@ -932,37 +1001,35 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
+/usr/include/SFML/Graphics/VertexArray.hpp:
+
+libimgui_lib.a:
+
+/usr/include/SFML/Graphics/Shape.hpp:
+
+/home/rjaradat/Projects/AlianWorlds/src/main.cpp:
+
 /usr/include/c++/15/bits/locale_facets.h:
 
 /usr/include/bits/types/wint_t.h:
 
-/home/rjaradat/Projects/AlianWorlds/include/GameWorld.hpp:
+/usr/lib64/libharfbuzz.so.0:
 
-/home/rjaradat/Projects/AlianWorlds/src/main.cpp:
+/usr/include/bits/types/mbstate_t.h:
 
-/usr/include/SFML/Graphics/Shape.hpp:
+/home/rjaradat/Projects/AlianWorlds/imgui/imconfig-SFML.h:
 
-/usr/include/c++/15/bits/stl_iterator_base_types.h:
+/usr/include/c++/15/bits/atomic_lockfree_defines.h:
 
-/usr/lib64/libbrotlidec.so.1:
+/home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML_export.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o:
+/usr/include/c++/15/bits/basic_string.h:
 
-/usr/include/SFML/System/Mutex.hpp:
+/usr/include/bits/wctype-wchar.h:
 
-/home/rjaradat/Projects/AlianWorlds/include/ResorceManager.hpp:
+/usr/include/c++/15/bits/cpp_type_traits.h:
 
-/usr/include/SFML/Window/GlResource.hpp:
-
-/usr/include/libintl.h:
-
-/usr/include/SFML/System/String.hpp:
-
-/usr/include/bits/endianness.h:
-
-/home/rjaradat/Projects/AlianWorlds/include/Light.hpp:
-
-/usr/include/bits/types/__locale_t.h:
+/usr/include/SFML/System/ThreadLocal.hpp:
 
 /usr/include/SFML/Audio.hpp:
 
@@ -972,9 +1039,9 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 
 /usr/include/SFML/Window/WindowStyle.hpp:
 
-/usr/include/c++/15/bits/invoke.h:
+/usr/include/SFML/System/Time.hpp:
 
-/usr/include/SFML/Graphics/Shader.hpp:
+/usr/include/SFML/System/Utf.hpp:
 
 /usr/include/SFML/System/Vector2.hpp:
 
@@ -1012,11 +1079,13 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 
 /usr/include/SFML/Window/Event.hpp:
 
+/usr/include/SFML/Window/GlResource.hpp:
+
 /usr/include/SFML/Window/Mouse.hpp:
 
-/usr/include/assert.h:
-
 /usr/include/SFML/Graphics/Font.hpp:
+
+/usr/include/assert.h:
 
 /usr/include/SFML/Window/VideoMode.hpp:
 
@@ -1027,8 +1096,6 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 /usr/include/asm-generic/int-ll64.h:
 
 /usr/include/SFML/Window/WindowBase.hpp:
-
-/usr/include/alloca.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -1054,6 +1121,16 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 
 /usr/include/bits/endian.h:
 
+/usr/include/c++/15/ext/concurrence.h:
+
+/usr/include/c++/15/bits/exception_ptr.h:
+
+/home/rjaradat/Projects/AlianWorlds/include/AudioManager.hpp:
+
+/usr/include/SFML/Audio/SoundBuffer.hpp:
+
+/usr/include/bits/floatn-common.h:
+
 /usr/include/bits/long-double.h:
 
 /usr/include/SFML/Graphics/Glsl.hpp:
@@ -1061,14 +1138,6 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 /usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/bits/select.h:
-
-/usr/include/SFML/System/Utf.inl:
-
-/usr/include/bits/setjmp.h:
-
-/usr/lib64/libXfixes.so.3:
-
-/usr/include/c++/15/bits/char_traits.h:
 
 /usr/include/SFML/Audio/SoundFileWriter.hpp:
 
@@ -1128,6 +1197,16 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 
 /usr/include/bits/types/locale_t.h:
 
+/usr/include/c++/15/bits/stl_tree.h:
+
+/usr/include/c++/15/bits/enable_special_members.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
+
 /usr/include/SFML/Window/Sensor.hpp:
 
 /usr/include/bits/types/struct_timespec.h:
@@ -1139,6 +1218,20 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 /usr/include/SFML/Window/ContextSettings.hpp:
 
 /usr/include/bits/waitflags.h:
+
+/usr/include/c++/15/bits/hash_bytes.h:
+
+/lib64/libm.so.6:
+
+/usr/include/c++/15/algorithm:
+
+/usr/include/c++/15/bits/stl_heap.h:
+
+/usr/include/c++/15/bits/exception_defines.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/c++/15/backward/auto_ptr.h:
 
 /usr/include/c++/15/bits/algorithmfwd.h:
 
@@ -1155,8 +1248,6 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 /usr/include/c++/15/bits/allocator.h:
 
 /usr/include/c++/15/bits/atomic_base.h:
-
-/usr/include/c++/15/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/15/bits/basic_ios.h:
 
@@ -1175,55 +1266,3 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
 /usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so:
 
 /usr/include/c++/15/bits/cxxabi_forced.h:
-
-/usr/include/c++/15/bits/stl_tree.h:
-
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/c++/15/bits/enable_special_members.h:
-
-/usr/include/c++/15/ostream:
-
-/usr/include/SFML/Graphics/View.hpp:
-
-/usr/include/SFML/Graphics/Transformable.hpp:
-
-/usr/include/c++/15/bits/exception.h:
-
-/usr/include/c++/15/bits/stl_heap.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/c++/15/backward/auto_ptr.h:
-
-/usr/include/c++/15/bits/exception_defines.h:
-
-/usr/include/c++/15/ext/concurrence.h:
-
-/usr/include/SFML/Audio/SoundBuffer.hpp:
-
-/home/rjaradat/Projects/AlianWorlds/include/AudioManager.hpp:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/c++/15/bits/exception_ptr.h:
-
-/usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h:
-
-/usr/include/c++/15/bits/stl_vector.h:
-
-/usr/include/c++/15/bits/functexcept.h:
-
-/usr/include/SFML/Graphics/RenderWindow.hpp:
-
-/usr/include/c++/15/bits/functional_hash.h:
-
-/lib64/libm.so.6:
-
-/usr/include/c++/15/algorithm:
-
-/usr/include/c++/15/bits/hash_bytes.h:

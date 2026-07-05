@@ -96,6 +96,10 @@ AlianWorlds_EXTERNAL_OBJECTS =
 AlianWorlds: CMakeFiles/AlianWorlds.dir/src/main.cpp.o
 AlianWorlds: CMakeFiles/AlianWorlds.dir/build.make
 AlianWorlds: CMakeFiles/AlianWorlds.dir/compiler_depend.ts
+AlianWorlds: /usr/lib64/libOpenGL.so
+AlianWorlds: /usr/lib64/libGLX.so
+AlianWorlds: libimgui_lib.a
+AlianWorlds: libimgui_lib.a
 AlianWorlds: /usr/lib64/libsfml-graphics.so.2.6.2
 AlianWorlds: /usr/lib64/libsfml-window.so.2.6.2
 AlianWorlds: /usr/lib64/libsfml-audio.so.2.6.2

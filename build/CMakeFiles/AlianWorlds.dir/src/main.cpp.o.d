@@ -233,7 +233,15 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/c++/15/backward/auto_ptr.h \
  /usr/include/c++/15/pstl/glue_memory_defs.h /usr/include/c++/15/iostream \
  /usr/include/c++/15/istream /usr/include/c++/15/bits/istream.tcc \
- /home/rjaradat/Projects/AlianWorlds/include/ResorceManager.hpp \
+ /home/rjaradat/Projects/AlianWorlds/imgui/imgui.h \
+ /home/rjaradat/Projects/AlianWorlds/imgui/imconfig.h \
+ /home/rjaradat/Projects/AlianWorlds/imgui/imconfig-SFML.h \
+ /usr/include/c++/15/cstdint \
+ /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML_export.h \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/float.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/assert.h \
+ /home/rjaradat/Projects/AlianWorlds/imgui/imconfig-SFML.h \
+ /home/rjaradat/Projects/AlianWorlds/include/ResourceManager.hpp \
  /usr/include/SFML/Audio.hpp /usr/include/SFML/Audio/InputSoundFile.hpp \
  /usr/include/SFML/Audio/Export.hpp /usr/include/SFML/Audio/Listener.hpp \
  /usr/include/SFML/Audio/Music.hpp \
@@ -251,9 +259,10 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/SFML/Audio/SoundFileFactory.inl \
  /usr/include/SFML/Audio/SoundFileReader.hpp \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
- /home/rjaradat/Projects/AlianWorlds/include/scenceManager.hpp \
- /usr/include/c++/15/cassert /usr/include/assert.h \
- /home/rjaradat/Projects/AlianWorlds/include/scene.hpp \
+ /home/rjaradat/Projects/AlianWorlds/include/SceneManager.hpp \
+ /usr/include/c++/15/cassert \
+ /home/rjaradat/Projects/AlianWorlds/include/Scene.hpp \
+ /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML.h \
  /home/rjaradat/Projects/AlianWorlds/include/Renderer.hpp \
  /home/rjaradat/Projects/AlianWorlds/include/Light.hpp \
  /home/rjaradat/Projects/AlianWorlds/include/inputManager.hpp \
