@@ -1,6 +1,6 @@
-CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
- /home/rjaradat/Projects/AlianWorlds/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/15/iostream \
+CMakeFiles/AlienWorlds.dir/src/main.cpp.o: \
+ /home/rjaradat/Projects/AlienWorlds/src/main.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/15/fstream \
  /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -10,9 +10,9 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h \
- /usr/include/c++/15/pstl/pstl_config.h /usr/include/c++/15/ostream \
- /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/ios \
- /usr/include/c++/15/iosfwd /usr/include/c++/15/bits/stringfwd.h \
+ /usr/include/c++/15/pstl/pstl_config.h /usr/include/c++/15/istream \
+ /usr/include/c++/15/ios /usr/include/c++/15/iosfwd \
+ /usr/include/c++/15/bits/stringfwd.h \
  /usr/include/c++/15/bits/memoryfwd.h /usr/include/c++/15/bits/postypes.h \
  /usr/include/c++/15/cwchar /usr/include/wchar.h \
  /usr/include/bits/libc-header-start.h /usr/include/bits/floatn.h \
@@ -132,10 +132,13 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/streambuf_iterator.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h \
  /usr/include/c++/15/bits/locale_facets.tcc \
- /usr/include/c++/15/bits/basic_ios.tcc \
- /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
- /usr/include/c++/15/bits/istream.tcc \
- /home/rjaradat/Projects/AlianWorlds/include/Engine.hpp \
+ /usr/include/c++/15/bits/basic_ios.tcc /usr/include/c++/15/ostream \
+ /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/bits/ostream.tcc \
+ /usr/include/c++/15/bits/istream.tcc /usr/include/c++/15/bits/codecvt.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/basic_file.h \
+ /usr/include/c++/15/x86_64-redhat-linux/bits/c++io.h \
+ /usr/include/c++/15/bits/fstream.tcc \
+ /home/rjaradat/Projects/AlienWorlds/include/Engine.hpp \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -157,8 +160,7 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/locale_facets_nonio.h /usr/include/c++/15/ctime \
  /usr/include/c++/15/x86_64-redhat-linux/bits/time_members.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
- /usr/include/c++/15/bits/locale_facets_nonio.tcc \
+ /usr/include/libintl.h /usr/include/c++/15/bits/locale_facets_nonio.tcc \
  /usr/include/c++/15/bits/locale_conv.h /usr/include/SFML/System/Utf.inl \
  /usr/include/c++/15/iterator /usr/include/c++/15/bits/stream_iterator.h \
  /usr/include/SFML/System/String.inl /usr/include/SFML/System/Thread.hpp \
@@ -223,15 +225,15 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/rjaradat/Projects/AlianWorlds/imgui/imgui.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imconfig.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imconfig-SFML.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imgui.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imconfig.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imconfig-SFML.h \
  /usr/include/c++/15/cstdint \
- /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML_export.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imgui-SFML_export.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/float.h \
  /usr/include/string.h /usr/include/strings.h /usr/include/assert.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imconfig-SFML.h \
- /home/rjaradat/Projects/AlianWorlds/include/ResourceManager.hpp \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imconfig-SFML.h \
+ /home/rjaradat/Projects/AlienWorlds/include/ResourceManager.hpp \
  /usr/include/SFML/Audio.hpp /usr/include/SFML/Audio/InputSoundFile.hpp \
  /usr/include/SFML/Audio/Export.hpp /usr/include/SFML/Audio/Listener.hpp \
  /usr/include/SFML/Audio/Music.hpp \
@@ -249,7 +251,7 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/SFML/Audio/SoundFileFactory.inl \
  /usr/include/SFML/Audio/SoundFileReader.hpp \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
- /home/rjaradat/Projects/AlianWorlds/include/SceneManager.hpp \
+ /home/rjaradat/Projects/AlienWorlds/include/SceneManager.hpp \
  /usr/include/c++/15/memory \
  /usr/include/c++/15/bits/stl_raw_storage_iter.h \
  /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
@@ -262,16 +264,17 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/atomic_lockfree_defines.h \
  /usr/include/c++/15/backward/auto_ptr.h \
  /usr/include/c++/15/pstl/glue_memory_defs.h /usr/include/c++/15/cassert \
- /home/rjaradat/Projects/AlianWorlds/include/Scene.hpp \
- /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML.h \
- /home/rjaradat/Projects/AlianWorlds/include/Renderer.hpp \
- /home/rjaradat/Projects/AlianWorlds/include/Light.hpp \
- /home/rjaradat/Projects/AlianWorlds/include/Object.hpp \
- /home/rjaradat/Projects/AlianWorlds/include/inputManager.hpp \
+ /home/rjaradat/Projects/AlienWorlds/include/Scene.hpp \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imgui-SFML.h \
+ /home/rjaradat/Projects/AlienWorlds/include/Renderer.hpp \
+ /usr/include/c++/15/iostream \
+ /home/rjaradat/Projects/AlienWorlds/include/Light.hpp \
+ /home/rjaradat/Projects/AlienWorlds/include/Object.hpp \
+ /home/rjaradat/Projects/AlienWorlds/include/inputManager.hpp \
  /usr/include/c++/15/unordered_map \
  /usr/include/c++/15/bits/unordered_map.h \
  /usr/include/c++/15/bits/hashtable.h \
  /usr/include/c++/15/bits/hashtable_policy.h \
  /usr/include/c++/15/bits/enable_special_members.h \
- /home/rjaradat/Projects/AlianWorlds/include/AudioManager.hpp \
- /home/rjaradat/Projects/AlianWorlds/include/GameWorld.hpp
+ /home/rjaradat/Projects/AlienWorlds/include/AudioManager.hpp \
+ /home/rjaradat/Projects/AlienWorlds/include/GameWorld.hpp

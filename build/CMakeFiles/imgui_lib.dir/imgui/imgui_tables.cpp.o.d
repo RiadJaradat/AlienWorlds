@@ -1,9 +1,9 @@
 CMakeFiles/imgui_lib.dir/imgui/imgui_tables.cpp.o: \
- /home/rjaradat/Projects/AlianWorlds/imgui/imgui_tables.cpp \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imgui_tables.cpp \
  /usr/include/stdc-predef.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imgui.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imconfig.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imconfig-SFML.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imgui.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imconfig.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imconfig-SFML.h \
  /usr/include/SFML/Graphics/Color.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Vector2.hpp \
@@ -23,14 +23,14 @@ CMakeFiles/imgui_lib.dir/imgui/imgui_tables.cpp.o: \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML_export.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imgui-SFML_export.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/float.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
  /usr/include/string.h /usr/include/bits/types/locale_t.h \
  /usr/include/bits/types/__locale_t.h /usr/include/strings.h \
  /usr/include/assert.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imgui_internal.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imgui_internal.h \
  /usr/include/stdio.h /usr/include/bits/types/__fpos_t.h \
  /usr/include/bits/types/__mbstate_t.h \
  /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
@@ -211,4 +211,4 @@ CMakeFiles/imgui_lib.dir/imgui/imgui_tables.cpp.o: \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/avx10_2copyintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/movrsintrin.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/amxmovrsintrin.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imstb_textedit.h
+ /home/rjaradat/Projects/AlienWorlds/imgui/imstb_textedit.h

@@ -1,4 +1,4 @@
-#include <iostream>
+#include <fstream>
 #include <cstdlib>
 #include "Engine.hpp"
 
@@ -10,7 +10,8 @@ int main(int argc, char* argv[])
         engine.run();
     }
     catch (const std::exception &e){
-        std::cerr << "Engine Error: " << e.what() << std::endl;
+        std::ofstream log("error.log", std::ios::app);
+        log << "Engine Error: " << e.what() << std::endl;
         return EXIT_FAILURE;
     }
 

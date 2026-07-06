@@ -54,21 +54,21 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rjaradat/Projects/AlianWorlds
+CMAKE_SOURCE_DIR = /home/rjaradat/Projects/AlienWorlds
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rjaradat/Projects/AlianWorlds/build
+CMAKE_BINARY_DIR = /home/rjaradat/Projects/AlienWorlds/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/AlianWorlds.dir/all
+all: CMakeFiles/AlienWorlds.dir/all
 all: CMakeFiles/imgui_lib.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/AlianWorlds.dir/codegen
+codegen: CMakeFiles/AlienWorlds.dir/codegen
 codegen: CMakeFiles/imgui_lib.dir/codegen
 .PHONY : codegen
 
@@ -77,41 +77,41 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/AlianWorlds.dir/clean
+clean: CMakeFiles/AlienWorlds.dir/clean
 clean: CMakeFiles/imgui_lib.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/AlianWorlds.dir
+# Target rules for target CMakeFiles/AlienWorlds.dir
 
 # All Build rule for target.
-CMakeFiles/AlianWorlds.dir/all: CMakeFiles/imgui_lib.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlianWorlds.dir/build.make CMakeFiles/AlianWorlds.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlianWorlds.dir/build.make CMakeFiles/AlianWorlds.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rjaradat/Projects/AlianWorlds/build/CMakeFiles --progress-num=1,2 "Built target AlianWorlds"
-.PHONY : CMakeFiles/AlianWorlds.dir/all
+CMakeFiles/AlienWorlds.dir/all: CMakeFiles/imgui_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlienWorlds.dir/build.make CMakeFiles/AlienWorlds.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlienWorlds.dir/build.make CMakeFiles/AlienWorlds.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rjaradat/Projects/AlienWorlds/build/CMakeFiles --progress-num=1,2 "Built target AlienWorlds"
+.PHONY : CMakeFiles/AlienWorlds.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/AlianWorlds.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlianWorlds/build/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/AlianWorlds.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlianWorlds/build/CMakeFiles 0
-.PHONY : CMakeFiles/AlianWorlds.dir/rule
+CMakeFiles/AlienWorlds.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlienWorlds/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/AlienWorlds.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlienWorlds/build/CMakeFiles 0
+.PHONY : CMakeFiles/AlienWorlds.dir/rule
 
 # Convenience name for target.
-AlianWorlds: CMakeFiles/AlianWorlds.dir/rule
-.PHONY : AlianWorlds
+AlienWorlds: CMakeFiles/AlienWorlds.dir/rule
+.PHONY : AlienWorlds
 
 # codegen rule for target.
-CMakeFiles/AlianWorlds.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlianWorlds.dir/build.make CMakeFiles/AlianWorlds.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rjaradat/Projects/AlianWorlds/build/CMakeFiles --progress-num=1,2 "Finished codegen for target AlianWorlds"
-.PHONY : CMakeFiles/AlianWorlds.dir/codegen
+CMakeFiles/AlienWorlds.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlienWorlds.dir/build.make CMakeFiles/AlienWorlds.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rjaradat/Projects/AlienWorlds/build/CMakeFiles --progress-num=1,2 "Finished codegen for target AlienWorlds"
+.PHONY : CMakeFiles/AlienWorlds.dir/codegen
 
 # clean rule for target.
-CMakeFiles/AlianWorlds.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlianWorlds.dir/build.make CMakeFiles/AlianWorlds.dir/clean
-.PHONY : CMakeFiles/AlianWorlds.dir/clean
+CMakeFiles/AlienWorlds.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlienWorlds.dir/build.make CMakeFiles/AlienWorlds.dir/clean
+.PHONY : CMakeFiles/AlienWorlds.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/imgui_lib.dir
@@ -120,14 +120,14 @@ CMakeFiles/AlianWorlds.dir/clean:
 CMakeFiles/imgui_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_lib.dir/build.make CMakeFiles/imgui_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_lib.dir/build.make CMakeFiles/imgui_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rjaradat/Projects/AlianWorlds/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target imgui_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rjaradat/Projects/AlienWorlds/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target imgui_lib"
 .PHONY : CMakeFiles/imgui_lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/imgui_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlianWorlds/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlienWorlds/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/imgui_lib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlianWorlds/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlienWorlds/build/CMakeFiles 0
 .PHONY : CMakeFiles/imgui_lib.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ imgui_lib: CMakeFiles/imgui_lib.dir/rule
 # codegen rule for target.
 CMakeFiles/imgui_lib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/imgui_lib.dir/build.make CMakeFiles/imgui_lib.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rjaradat/Projects/AlianWorlds/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Finished codegen for target imgui_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rjaradat/Projects/AlienWorlds/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Finished codegen for target imgui_lib"
 .PHONY : CMakeFiles/imgui_lib.dir/codegen
 
 # clean rule for target.

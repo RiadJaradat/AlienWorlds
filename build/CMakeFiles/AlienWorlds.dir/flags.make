@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/rjaradat/Projects/AlianWorlds/include -I/home/rjaradat/Projects/AlianWorlds/imgui
+CXX_INCLUDES = -I/home/rjaradat/Projects/AlienWorlds/include -I/home/rjaradat/Projects/AlienWorlds/imgui
 
 CXX_FLAGS = -std=gnu++17
 

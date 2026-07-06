@@ -1,8 +1,8 @@
-AlianWorlds: \
+AlienWorlds: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
-  CMakeFiles/AlianWorlds.dir/src/main.cpp.o \
+  CMakeFiles/AlienWorlds.dir/src/main.cpp.o \
   /usr/lib64/libOpenGL.so \
   /usr/lib64/libGLX.so \
   libimgui_lib.a \
@@ -73,7 +73,7 @@ AlianWorlds: \
 
 /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
 
-CMakeFiles/AlianWorlds.dir/src/main.cpp.o:
+CMakeFiles/AlienWorlds.dir/src/main.cpp.o:
 
 /usr/lib64/libOpenGL.so:
 

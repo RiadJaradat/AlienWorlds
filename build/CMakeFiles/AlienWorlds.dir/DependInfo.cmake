@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/rjaradat/Projects/AlianWorlds/src/main.cpp" "CMakeFiles/AlianWorlds.dir/src/main.cpp.o" "gcc" "CMakeFiles/AlianWorlds.dir/src/main.cpp.o.d"
-  "" "AlianWorlds" "gcc" "CMakeFiles/AlianWorlds.dir/link.d"
+  "/home/rjaradat/Projects/AlienWorlds/src/main.cpp" "CMakeFiles/AlienWorlds.dir/src/main.cpp.o" "gcc" "CMakeFiles/AlienWorlds.dir/src/main.cpp.o.d"
+  "" "AlienWorlds" "gcc" "CMakeFiles/AlienWorlds.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

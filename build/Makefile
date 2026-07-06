@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rjaradat/Projects/AlianWorlds
+CMAKE_SOURCE_DIR = /home/rjaradat/Projects/AlienWorlds
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rjaradat/Projects/AlianWorlds/build
+CMAKE_BINARY_DIR = /home/rjaradat/Projects/AlienWorlds/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlianWorlds/build/CMakeFiles /home/rjaradat/Projects/AlianWorlds/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlienWorlds/build/CMakeFiles /home/rjaradat/Projects/AlienWorlds/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlianWorlds/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rjaradat/Projects/AlienWorlds/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named AlianWorlds
+# Target rules for targets named AlienWorlds
 
 # Build rule for target.
-AlianWorlds: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AlianWorlds
-.PHONY : AlianWorlds
+AlienWorlds: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AlienWorlds
+.PHONY : AlienWorlds
 
 # fast build rule for target.
-AlianWorlds/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlianWorlds.dir/build.make CMakeFiles/AlianWorlds.dir/build
-.PHONY : AlianWorlds/fast
+AlienWorlds/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlienWorlds.dir/build.make CMakeFiles/AlienWorlds.dir/build
+.PHONY : AlienWorlds/fast
 
 #=============================================================================
 # Target rules for targets named imgui_lib
@@ -267,7 +267,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlianWorlds.dir/build.make CMakeFiles/AlianWorlds.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlienWorlds.dir/build.make CMakeFiles/AlienWorlds.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -275,7 +275,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlianWorlds.dir/build.make CMakeFiles/AlianWorlds.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlienWorlds.dir/build.make CMakeFiles/AlienWorlds.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -283,7 +283,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlianWorlds.dir/build.make CMakeFiles/AlianWorlds.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AlienWorlds.dir/build.make CMakeFiles/AlienWorlds.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -294,7 +294,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... AlianWorlds"
+	@echo "... AlienWorlds"
 	@echo "... imgui_lib"
 	@echo "... imgui/imgui-SFML.o"
 	@echo "... imgui/imgui-SFML.i"

@@ -1,7 +1,7 @@
 CMakeFiles/imgui_lib.dir/imgui/imgui-SFML.cpp.o: \
- /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML.cpp \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imgui-SFML.cpp \
  /usr/include/stdc-predef.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imgui-SFML.h \
  /usr/include/SFML/Graphics/Color.hpp \
  /usr/include/SFML/Graphics/Export.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/Graphics/Rect.hpp /usr/include/SFML/System/Vector2.hpp \
@@ -150,10 +150,10 @@ CMakeFiles/imgui_lib.dir/imgui/imgui-SFML.cpp.o: \
  /usr/include/c++/15/bits/locale_conv.h /usr/include/SFML/System/Utf.inl \
  /usr/include/c++/15/iterator /usr/include/c++/15/bits/stream_iterator.h \
  /usr/include/SFML/System/String.inl \
- /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML_export.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imgui.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imconfig.h \
- /home/rjaradat/Projects/AlianWorlds/imgui/imconfig-SFML.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imgui-SFML_export.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imgui.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imconfig.h \
+ /home/rjaradat/Projects/AlienWorlds/imgui/imconfig-SFML.h \
  /usr/include/c++/15/cstdint \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \

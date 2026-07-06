@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-project(AlianWorlds LANGUAGES CXX)
+project(AlienWorlds LANGUAGES CXX)
 
 # Force C++17 or higher (SFML 3 requires C++17)
 set(CMAKE_CXX_STANDARD 17)
@@ -11,14 +11,14 @@ find_package(SFML COMPONENTS graphics window system audio REQUIRED)
 find_package(OpenGL REQUIRED)
 
 # Define your executable and its source files
-add_executable(AlianWorlds src/main.cpp)
+add_executable(AlienWorlds src/main.cpp)
 
 # Include the Game headers
-target_include_directories(AlianWorlds PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(AlienWorlds PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # 2. Link OpenGL to your main project executable
-# Replace 'AlianWorlds' with the actual name used in your add_executable() command
-target_link_libraries(AlianWorlds PRIVATE 
+# Replace 'AlienWorlds' with the actual name used in your add_executable() command
+target_link_libraries(AlienWorlds PRIVATE 
     ${OPENGL_LIBRARIES}
     imgui_lib
 )
@@ -47,8 +47,8 @@ target_include_directories(imgui_lib PUBLIC
 target_link_libraries(imgui_lib PUBLIC sfml-graphics sfml-window sfml-system)
 
 # Link ImGui to your main game executable
-# Replace 'AlianWorlds' with your actual target name
-target_link_libraries(AlianWorlds PRIVATE imgui_lib)
+# Replace 'AlienWorlds' with your actual target name
+target_link_libraries(AlienWorlds PRIVATE imgui_lib)
 
 # Link SFML libraries to your target
-target_link_libraries(AlianWorlds PRIVATE sfml-graphics sfml-window sfml-system sfml-audio)
+target_link_libraries(AlienWorlds PRIVATE sfml-graphics sfml-window sfml-system sfml-audio)
