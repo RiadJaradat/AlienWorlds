@@ -1,62 +1,18 @@
-#include <SFML/Graphics.hpp>
-#include <memory>
 #include <iostream>
+#include <cstdlib>
+#include "Engine.hpp"
 
-#include "imgui.h"
-#include "imconfig-SFML.h"
-#include "ResourceManager.hpp"
-#include "SceneManager.hpp"
-#include "inputManager.hpp"
-#include "AudioManager.hpp"
-#include "GameWorld.hpp"
-
-int main()
+int main(int argc, char* argv[])
 {
-
-    sf::VideoMode fullScreen = sf::VideoMode::getDesktopMode();
-    sf::RenderWindow window(fullScreen, "AlianWorlds", sf::Style::Fullscreen);
-    sf::Clock deltaClock;
-
-    ResourceManager::loadResources();
-
-    Renderer renderer(window);
-    SceneManager sceneManager;
-    InputManager inputManager;
-    AudioManager audioManager;
-
-    window.setVerticalSyncEnabled(true);
-
-    sceneManager.setScene(std::make_unique<GameScene>());
-
-    while (window.isOpen())
+    try
     {
-        float dt = deltaClock.restart().asSeconds();
-
-        sf::Event event;
-
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-
-            ImGui::SFML::ProcessEvent(event);
-            inputManager.handleEvent(event);
-            sceneManager.handleEvent(event);
-        }
-
-        inputManager.update();
-        sceneManager.update(inputManager, audioManager, dt);
-        audioManager.update();
-        ImGui::SFML::Update(window, deltaClock.restart());
-        
-        renderer.beginFrame();
-
-        sceneManager.render(renderer);
-
-        renderer.endFrame();
+        Engine engine;
+        engine.run();
+    }
+    catch (const std::exception &e){
+        std::cerr << "Engine Error: " << e.what() << std::endl;
+        return EXIT_FAILURE;
     }
 
-    ImGui::SFML::Shutdown();
-
-    return 0;
+    return EXIT_SUCCESS;
 }

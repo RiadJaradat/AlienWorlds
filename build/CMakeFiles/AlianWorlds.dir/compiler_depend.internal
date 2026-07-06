@@ -63,8 +63,10 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o
  /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML_export.h
  /home/rjaradat/Projects/AlianWorlds/imgui/imgui.h
  /home/rjaradat/Projects/AlianWorlds/include/AudioManager.hpp
+ /home/rjaradat/Projects/AlianWorlds/include/Engine.hpp
  /home/rjaradat/Projects/AlianWorlds/include/GameWorld.hpp
  /home/rjaradat/Projects/AlianWorlds/include/Light.hpp
+ /home/rjaradat/Projects/AlianWorlds/include/Object.hpp
  /home/rjaradat/Projects/AlianWorlds/include/Renderer.hpp
  /home/rjaradat/Projects/AlianWorlds/include/ResourceManager.hpp
  /home/rjaradat/Projects/AlianWorlds/include/Scene.hpp

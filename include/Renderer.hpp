@@ -6,6 +6,7 @@
 #include <iostream>
 
 #include "Light.hpp"
+#include "Object.hpp"
 #include "ResourceManager.hpp"
 #include "imgui.h"
 #include "imgui-SFML.h"
@@ -39,6 +40,11 @@ public:
     void submit(const Light &light)
     {
         lights.push_back(&light);
+    }
+
+    void submit(const Object &object)
+    {
+        items.push_back(object.getSprite());
     }
 
     void endFrame()

@@ -61,8 +61,10 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
   /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML_export.h \
   /home/rjaradat/Projects/AlianWorlds/imgui/imgui.h \
   /home/rjaradat/Projects/AlianWorlds/include/AudioManager.hpp \
+  /home/rjaradat/Projects/AlianWorlds/include/Engine.hpp \
   /home/rjaradat/Projects/AlianWorlds/include/GameWorld.hpp \
   /home/rjaradat/Projects/AlianWorlds/include/Light.hpp \
+  /home/rjaradat/Projects/AlianWorlds/include/Object.hpp \
   /home/rjaradat/Projects/AlianWorlds/include/Renderer.hpp \
   /home/rjaradat/Projects/AlianWorlds/include/ResourceManager.hpp \
   /home/rjaradat/Projects/AlianWorlds/include/Scene.hpp \
@@ -477,8 +479,6 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/include/c++/15/vector:
 
-/usr/include/c++/15/unordered_map:
-
 /usr/include/c++/15/tuple:
 
 /usr/include/c++/15/string_view:
@@ -639,8 +639,6 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/include/c++/15/bits/functexcept.h:
 
-/usr/include/SFML/Graphics/PrimitiveType.hpp:
-
 /usr/include/SFML/System/NonCopyable.hpp:
 
 /usr/include/SFML/System/Mutex.hpp:
@@ -648,8 +646,6 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 /usr/include/SFML/System/Err.hpp:
 
 /usr/include/SFML/Audio/SoundFileFactory.hpp:
-
-/usr/include/SFML/Graphics/VertexBuffer.hpp:
 
 /usr/include/SFML/System/Export.hpp:
 
@@ -669,6 +665,8 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/include/SFML/Graphics/Rect.inl:
 
+/usr/include/SFML/Graphics/PrimitiveType.hpp:
+
 /usr/include/c++/15/bits/stl_iterator.h:
 
 /home/rjaradat/Projects/AlianWorlds/include/Scene.hpp:
@@ -676,6 +674,10 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 /usr/include/SFML/Graphics/Image.hpp:
 
 /usr/include/SFML/Graphics/Vertex.hpp:
+
+/usr/include/SFML/Graphics/VertexBuffer.hpp:
+
+/home/rjaradat/Projects/AlianWorlds/include/Engine.hpp:
 
 /usr/include/c++/15/cwchar:
 
@@ -749,15 +751,13 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 
 /usr/lib64/crti.o:
 
+/usr/include/c++/15/unordered_map:
+
+/home/rjaradat/Projects/AlianWorlds/include/Object.hpp:
+
+/usr/lib64/libbz2.so.1:
+
 /usr/include/bits/types/__locale_t.h:
-
-/usr/include/libintl.h:
-
-/usr/include/SFML/System/String.hpp:
-
-/usr/include/bits/endianness.h:
-
-/home/rjaradat/Projects/AlianWorlds/include/Light.hpp:
 
 /home/rjaradat/Projects/AlianWorlds/include/GameWorld.hpp:
 
@@ -824,8 +824,6 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlianWorlds/s
 /usr/include/c++/15/bits/memoryfwd.h:
 
 /usr/lib64/libXcursor.so.1:
-
-/usr/lib64/libbz2.so.1:
 
 /home/rjaradat/Projects/AlianWorlds/imgui/imconfig.h:
 
@@ -1022,6 +1020,14 @@ libimgui_lib.a:
 /usr/include/c++/15/bits/atomic_lockfree_defines.h:
 
 /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML_export.h:
+
+/usr/include/libintl.h:
+
+/usr/include/bits/endianness.h:
+
+/home/rjaradat/Projects/AlianWorlds/include/Light.hpp:
+
+/usr/include/SFML/System/String.hpp:
 
 /usr/include/c++/15/bits/basic_string.h:
 

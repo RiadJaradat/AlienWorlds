@@ -1,10 +1,6 @@
 CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /home/rjaradat/Projects/AlianWorlds/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/SFML/Graphics.hpp \
- /usr/include/SFML/Window.hpp /usr/include/SFML/System.hpp \
- /usr/include/SFML/Config.hpp /usr/include/SFML/System/Clock.hpp \
- /usr/include/SFML/System/Export.hpp /usr/include/SFML/System/Time.hpp \
- /usr/include/SFML/System/Err.hpp /usr/include/c++/15/ostream \
+ /usr/include/stdc-predef.h /usr/include/c++/15/iostream \
  /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -14,7 +10,7 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
  /usr/include/gnu/stubs-64.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h \
- /usr/include/c++/15/pstl/pstl_config.h \
+ /usr/include/c++/15/pstl/pstl_config.h /usr/include/c++/15/ostream \
  /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/ios \
  /usr/include/c++/15/iosfwd /usr/include/c++/15/bits/stringfwd.h \
  /usr/include/c++/15/bits/memoryfwd.h /usr/include/c++/15/bits/postypes.h \
@@ -137,7 +133,13 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/c++/15/x86_64-redhat-linux/bits/ctype_inline.h \
  /usr/include/c++/15/bits/locale_facets.tcc \
  /usr/include/c++/15/bits/basic_ios.tcc \
- /usr/include/c++/15/bits/ostream.tcc \
+ /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
+ /usr/include/c++/15/bits/istream.tcc \
+ /home/rjaradat/Projects/AlianWorlds/include/Engine.hpp \
+ /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
+ /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
+ /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
+ /usr/include/SFML/System/Time.hpp /usr/include/SFML/System/Err.hpp \
  /usr/include/SFML/System/FileInputStream.hpp \
  /usr/include/SFML/System/InputStream.hpp \
  /usr/include/SFML/System/NonCopyable.hpp \
@@ -220,19 +222,7 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
- /usr/include/SFML/Graphics/VertexBuffer.hpp /usr/include/c++/15/memory \
- /usr/include/c++/15/bits/stl_raw_storage_iter.h \
- /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
- /usr/include/c++/15/bits/shared_ptr.h \
- /usr/include/c++/15/bits/shared_ptr_base.h \
- /usr/include/c++/15/bits/allocated_ptr.h \
- /usr/include/c++/15/ext/concurrence.h \
- /usr/include/c++/15/bits/shared_ptr_atomic.h \
- /usr/include/c++/15/bits/atomic_base.h \
- /usr/include/c++/15/bits/atomic_lockfree_defines.h \
- /usr/include/c++/15/backward/auto_ptr.h \
- /usr/include/c++/15/pstl/glue_memory_defs.h /usr/include/c++/15/iostream \
- /usr/include/c++/15/istream /usr/include/c++/15/bits/istream.tcc \
+ /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/rjaradat/Projects/AlianWorlds/imgui/imgui.h \
  /home/rjaradat/Projects/AlianWorlds/imgui/imconfig.h \
  /home/rjaradat/Projects/AlianWorlds/imgui/imconfig-SFML.h \
@@ -260,11 +250,23 @@ CMakeFiles/AlianWorlds.dir/src/main.cpp.o: \
  /usr/include/SFML/Audio/SoundFileReader.hpp \
  /usr/include/SFML/Audio/SoundFileWriter.hpp \
  /home/rjaradat/Projects/AlianWorlds/include/SceneManager.hpp \
- /usr/include/c++/15/cassert \
+ /usr/include/c++/15/memory \
+ /usr/include/c++/15/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
+ /usr/include/c++/15/bits/shared_ptr.h \
+ /usr/include/c++/15/bits/shared_ptr_base.h \
+ /usr/include/c++/15/bits/allocated_ptr.h \
+ /usr/include/c++/15/ext/concurrence.h \
+ /usr/include/c++/15/bits/shared_ptr_atomic.h \
+ /usr/include/c++/15/bits/atomic_base.h \
+ /usr/include/c++/15/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/15/backward/auto_ptr.h \
+ /usr/include/c++/15/pstl/glue_memory_defs.h /usr/include/c++/15/cassert \
  /home/rjaradat/Projects/AlianWorlds/include/Scene.hpp \
  /home/rjaradat/Projects/AlianWorlds/imgui/imgui-SFML.h \
  /home/rjaradat/Projects/AlianWorlds/include/Renderer.hpp \
  /home/rjaradat/Projects/AlianWorlds/include/Light.hpp \
+ /home/rjaradat/Projects/AlianWorlds/include/Object.hpp \
  /home/rjaradat/Projects/AlianWorlds/include/inputManager.hpp \
  /usr/include/c++/15/unordered_map \
  /usr/include/c++/15/bits/unordered_map.h \
