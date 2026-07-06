@@ -4,7 +4,7 @@
 #include <SFML/Audio.hpp>
 #include <unordered_map>
 #include <memory>
-#include <iostream>
+#include <EngineError.hpp>
 
 #define ASSETSFOLDER "../assets/"
 
@@ -54,7 +54,7 @@ private:
     }
 
     static inline std::unordered_map<TextureID, std::unique_ptr<sf::Texture>> loadedTextures;
-    static inline std::unordered_map<ShaderID, std::unique_ptr<sf::Shader>> loadedshaders;
+    static inline std::unordered_map<ShaderID, std::unique_ptr<sf::Shader>> loadedShaders;
     static inline std::unordered_map<SoundID, std::unique_ptr<sf::SoundBuffer>> loadedSounds;
 
 public:
@@ -74,21 +74,21 @@ public:
         {
             auto text = std::make_unique<sf::Texture>();
             if (!text->loadFromFile(getPath(id)))
-                std::cerr << "Failed to load texure" << std::endl;
+                throw EngineError("Failed to load texture");
             loadedTextures[id] = std::move(text);
         }
         return *loadedTextures[id];
     }
     static sf::Shader &getResource(ShaderID id)
     {
-        if (loadedshaders.find(id) == loadedshaders.end())
+        if (loadedShaders.find(id) == loadedShaders.end())
         {
             auto text = std::make_unique<sf::Shader>();
             if (!text->loadFromFile(getPath(id), sf::Shader::Fragment))
-                std::cerr << "Failed to load shader" << std::endl;
-            loadedshaders[id] = std::move(text);
+                throw EngineError("Failed to load shader");
+            loadedShaders[id] = std::move(text);
         }
-        return *loadedshaders[id];
+        return *loadedShaders[id];
     }
     static sf::SoundBuffer &getResource(SoundID id)
     {
@@ -96,7 +96,7 @@ public:
         {
             auto text = std::make_unique<sf::SoundBuffer>();
             if (!text->loadFromFile(getPath(id)))
-                std::cerr << "Failed to load sound" << std::endl;
+                throw EngineError("Failed to load sound");
             loadedSounds[id] = std::move(text);
         }
         return *loadedSounds[id];

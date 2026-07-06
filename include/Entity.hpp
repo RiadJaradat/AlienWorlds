@@ -5,7 +5,7 @@
 #include "Object.hpp"
 
 #define Gravity 9.8
-#define Multiplyer 100
+#define Multiplier 100
 
 class Entity : public Object
 {
@@ -23,7 +23,7 @@ public:
 
     void update(float dt) override
     {
-        m_velocity.y += Gravity * Multiplyer * dt;
+        m_velocity.y += Gravity * Multiplier * dt;
 
         sf::Vector2f position = getPosition();
         position += m_velocity * dt;

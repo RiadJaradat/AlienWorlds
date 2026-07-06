@@ -2,6 +2,8 @@
 
 #include <SFML/Graphics.hpp>
 
+#include "EngineError.hpp"
+
 class Object
 {
 private:
@@ -33,7 +35,7 @@ public:
     sf::Vector2f getPosition() const 
     {
         if (bounds.getPosition() != sprt.getPosition())
-            throw std::logic_error("Bad Positioning");
+            throw EngineError("Bad bound and sprite positioning");
 
         return bounds.getPosition();
     }

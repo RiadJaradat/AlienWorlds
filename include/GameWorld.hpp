@@ -48,7 +48,7 @@ public:
         if (inputManager.isPressed(Action::Interact))
             audioManager.playSoundEffect(ResourceManager::getResource(SoundID::OpenUI), {100, 100});        
 
-        audioManager.setLisitenerPosition(light.position);
+        audioManager.setListenerPosition(light.position);
     }
     void render(Renderer &renderer) override
     {

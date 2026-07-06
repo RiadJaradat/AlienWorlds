@@ -5,8 +5,8 @@
 #include <algorithm>
 
 /*
-////////// to clearify: ///////////////
-// sound track is a biom spesific track that contain enviroment sounds
+////////// to clarify: ///////////////
+// sound track is a biome specific track that contain environment sounds
 //// eg. Water, Thermal Vents and more.
 */
 
@@ -34,12 +34,12 @@ private:
 public:
     AudioManager()
     {
-        sf::Listener::setDirection(0.f, -1.f, 0.f);   // temperarly
+        sf::Listener::setDirection(0.f, -1.f, 0.f);   // tempreally
     }
 
-    void setLisitenerPosition(const sf::Vector2f &postition)
+    void setListenerPosition(const sf::Vector2f &position)
     {
-        sf::Listener::setPosition(postition.x, postition.y, 0.f);
+        sf::Listener::setPosition(position.x, position.y, 0.f);
     }
 
     void playSoundEffect(const sf::SoundBuffer &buffer, const sf::Vector2f &position)
