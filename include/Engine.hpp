@@ -63,8 +63,6 @@ public:
     Engine() : window(fullScreen, EngineProperties::WindowTitle, sf::Style::Fullscreen),
                renderer(window)
     {
-        ResourceManager::loadResources();
-
         window.setVerticalSyncEnabled(true);
 
         sceneManager.setScene(std::make_unique<GameScene>());

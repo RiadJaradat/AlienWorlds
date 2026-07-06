@@ -88,14 +88,14 @@ private:
             light->color.b / 255.f
         );
 
-        ResourceManager::lightShader.setUniform("u_lightPos", light->position);
-        ResourceManager::lightShader.setUniform("u_lightColor", glslColor);
-        ResourceManager::lightShader.setUniform("u_lightRadius", light->radius * light->intensity);
-        ResourceManager::lightShader.setUniform("u_resolution", sf::Vector2f(windowSize.x, windowSize.y));
+        ResourceManager::getResource(ShaderID::light).setUniform("u_lightPos", light->position);
+        ResourceManager::getResource(ShaderID::light).setUniform("u_lightColor", glslColor);
+        ResourceManager::getResource(ShaderID::light).setUniform("u_lightRadius", light->radius * light->intensity);
+        ResourceManager::getResource(ShaderID::light).setUniform("u_resolution", sf::Vector2f(windowSize.x, windowSize.y));
 
         // CRITICAL: Use BlendAdd so overlapping light sources brighten up together
         sf::RenderStates blendAdd(sf::BlendAdd);
-        blendAdd.shader = &ResourceManager::lightShader;
+        blendAdd.shader = &ResourceManager::getResource(ShaderID::light);
 
         lightTexture.draw(renderQuad, blendAdd);
     }
