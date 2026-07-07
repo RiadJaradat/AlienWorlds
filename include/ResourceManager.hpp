@@ -5,8 +5,8 @@
 #include <unordered_map>
 #include <memory>
 #include <EngineError.hpp>
+#include "EngineProperties.hpp"
 
-#define ASSETSFOLDER "../assets/"
 
 enum class TextureID
 {
@@ -26,14 +26,13 @@ class ResourceManager
 private:
     ResourceManager() = delete;
 
-    const static inline sf::Vector2i tileSize = sf::Vector2i(64, 64);
 
     static std::string getPath(TextureID T)
     {
         switch (T)
         {
         case TextureID::defaultTex:
-            return ASSETSFOLDER "pngs/default.png";
+            return EP::EP::assetsFolder + + "pngs/default.png";
         }
     }
     static std::string getPath(ShaderID S)
@@ -41,7 +40,7 @@ private:
         switch (S)
         {
         case ShaderID::light:
-            return ASSETSFOLDER "shaders/light_shader.frag";
+            return EP::assetsFolder + "shaders/light_shader.frag";
         }
     }
     static std::string getPath(SoundID S)
@@ -49,7 +48,7 @@ private:
         switch (S)
         {
         case SoundID::OpenUI:
-            return ASSETSFOLDER "SoundEffects/UI.wav";
+            return EP::assetsFolder + "SoundEffects/UI.wav";
         }
     }
 
@@ -61,9 +60,9 @@ public:
     static sf::Texture getTile(const sf::Texture &Tileset, const sf::Vector2i &index)
     {
         sf::Texture subText;
-        subText.create(tileSize.x, tileSize.y);
+        subText.create(EP::tileSize.x, EP::tileSize.y);
 
-        subText.update(Tileset, index.x * tileSize.x, index.y * tileSize.y);
+        subText.update(Tileset, index.x * EP::tileSize.x, index.y * EP::tileSize.y);
 
         return subText;
     }

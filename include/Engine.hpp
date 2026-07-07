@@ -9,18 +9,12 @@
 #include "SceneManager.hpp"
 #include "inputManager.hpp"
 #include "AudioManager.hpp"
-#include "GameWorld.hpp"
-
-struct EngineProperties
-{
-    static inline const std::string WindowTitle = "AlienWorlds";
-    static inline bool VSyncEnable = true;
-};
+#include "GameMenu.hpp"
+#include "EngineProperties.hpp"
 
 class Engine
 {
 private:
-    sf::VideoMode fullScreen = sf::VideoMode::getDesktopMode();
     sf::RenderWindow window;
     sf::Clock deltaClock;
 
@@ -60,12 +54,12 @@ private:
     }
 
 public:
-    Engine() : window(fullScreen, EngineProperties::WindowTitle, sf::Style::Fullscreen),
+    Engine() : window(EP::fullScreen, EP::WindowTitle, sf::Style::Fullscreen),
                renderer(window)
     {
         window.setVerticalSyncEnabled(true);
 
-        sceneManager.setScene(std::make_unique<GameScene>());
+        sceneManager.setScene(std::make_unique<GameMenu>());
     }
 
     ~Engine()

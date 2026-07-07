@@ -8,6 +8,8 @@
 #include "inputManager.hpp"
 #include "AudioManager.hpp"
 
+class SceneManager;
+
 class Scene
 {
 public:
@@ -16,5 +18,5 @@ public:
     virtual void handleEvent(const sf::Event &event) = 0;
     virtual void render(Renderer &render) = 0;
     virtual void update(InputManager &input, AudioManager &audioManager, float dt) = 0;
-    virtual void renderGUI() = 0;
+    virtual void renderGUI(SceneManager &sceneManager) = 0;
 };

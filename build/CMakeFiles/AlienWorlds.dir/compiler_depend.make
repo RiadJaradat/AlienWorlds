@@ -61,14 +61,21 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlienWorlds/s
   /home/rjaradat/Projects/AlienWorlds/imgui/imgui-SFML_export.h \
   /home/rjaradat/Projects/AlienWorlds/imgui/imgui.h \
   /home/rjaradat/Projects/AlienWorlds/include/AudioManager.hpp \
+  /home/rjaradat/Projects/AlienWorlds/include/Biome.hpp \
   /home/rjaradat/Projects/AlienWorlds/include/Engine.hpp \
-  /home/rjaradat/Projects/AlienWorlds/include/GameWorld.hpp \
+  /home/rjaradat/Projects/AlienWorlds/include/EngineError.hpp \
+  /home/rjaradat/Projects/AlienWorlds/include/EngineProperties.hpp \
+  /home/rjaradat/Projects/AlienWorlds/include/Entity.hpp \
+  /home/rjaradat/Projects/AlienWorlds/include/GameMenu.hpp \
+  /home/rjaradat/Projects/AlienWorlds/include/GameScene.hpp \
   /home/rjaradat/Projects/AlienWorlds/include/Light.hpp \
   /home/rjaradat/Projects/AlienWorlds/include/Object.hpp \
+  /home/rjaradat/Projects/AlienWorlds/include/Player.hpp \
   /home/rjaradat/Projects/AlienWorlds/include/Renderer.hpp \
   /home/rjaradat/Projects/AlienWorlds/include/ResourceManager.hpp \
   /home/rjaradat/Projects/AlienWorlds/include/Scene.hpp \
   /home/rjaradat/Projects/AlienWorlds/include/SceneManager.hpp \
+  /home/rjaradat/Projects/AlienWorlds/include/ShallowWaters.hpp \
   /home/rjaradat/Projects/AlienWorlds/include/inputManager.hpp \
   /usr/include/SFML/Audio.hpp \
   /usr/include/SFML/Audio/AlResource.hpp \
@@ -475,7 +482,7 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlienWorlds/s
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h:
 
-/usr/include/c++/15/x86_64-redhat-linux/bits/c++io.h:
+/usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h:
 
 /usr/include/c++/15/x86_64-redhat-linux/bits/c++allocator.h:
 
@@ -641,25 +648,19 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlienWorlds/s
 
 /usr/include/c++/15/bits/functexcept.h:
 
-/usr/include/SFML/System/NonCopyable.hpp:
+/usr/include/c++/15/bits/cxxabi_init_exception.h:
 
-/home/rjaradat/Projects/AlienWorlds/src/main.cpp:
+/usr/include/c++/15/bits/concept_check.h:
 
-/usr/include/SFML/System/Mutex.hpp:
+/usr/include/c++/15/x86_64-redhat-linux/bits/c++locale.h:
+
+/usr/include/c++/15/bits/codecvt.h:
 
 /usr/include/SFML/System/Err.hpp:
 
 /usr/include/SFML/Audio/SoundFileFactory.hpp:
 
 /usr/include/SFML/Graphics/VertexBuffer.hpp:
-
-/usr/include/SFML/System/Export.hpp:
-
-/home/rjaradat/Projects/AlienWorlds/include/ResourceManager.hpp:
-
-/home/rjaradat/Projects/AlienWorlds/include/SceneManager.hpp:
-
-/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
 
 /usr/include/SFML/Graphics/Transform.hpp:
 
@@ -687,8 +688,6 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlienWorlds/s
 
 /usr/lib64/libsfml-system.so.2.6.2:
 
-/usr/include/SFML/System/InputStream.hpp:
-
 /usr/include/bits/errno.h:
 
 /usr/include/bits/timex.h:
@@ -698,10 +697,6 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlienWorlds/s
 /usr/lib64/libz.so.1:
 
 /usr/include/bits/struct_mutex.h:
-
-/usr/include/SFML/System/MemoryInputStream.hpp:
-
-/usr/lib64/libudev.so.1:
 
 /usr/include/SFML/Graphics/RenderStates.hpp:
 
@@ -719,9 +714,15 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlienWorlds/s
 
 /usr/include/SFML/Audio/AlResource.hpp:
 
-/usr/include/bits/types/__locale_t.h:
-
 /usr/include/bits/long-double.h:
+
+/home/rjaradat/Projects/AlienWorlds/include/ShallowWaters.hpp:
+
+/home/rjaradat/Projects/AlienWorlds/include/SceneManager.hpp:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
+
+/usr/include/SFML/System/Export.hpp:
 
 /usr/include/SFML/Graphics/RectangleShape.hpp:
 
@@ -751,6 +752,14 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlienWorlds/s
 
 /home/rjaradat/Projects/AlienWorlds/include/Light.hpp:
 
+/home/rjaradat/Projects/AlienWorlds/include/Entity.hpp:
+
+/usr/include/bits/types/__locale_t.h:
+
+/home/rjaradat/Projects/AlienWorlds/include/Biome.hpp:
+
+/usr/include/asm-generic/errno-base.h:
+
 /usr/include/SFML/Graphics/ConvexShape.hpp:
 
 /usr/lib64/libbz2.so.1:
@@ -758,6 +767,12 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlienWorlds/s
 /usr/include/c++/15/bits/range_access.h:
 
 /usr/lib64/libpcre2-8.so.0:
+
+/home/rjaradat/Projects/AlienWorlds/include/ResourceManager.hpp:
+
+/home/rjaradat/Projects/AlienWorlds/include/GameMenu.hpp:
+
+/usr/include/SFML/Graphics/Shape.hpp:
 
 /usr/lib64/libXext.so.6:
 
@@ -819,9 +834,13 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlienWorlds/s
 
 /home/rjaradat/Projects/AlienWorlds/include/Engine.hpp:
 
-/usr/include/SFML/System/Lock.hpp:
+/usr/include/c++/15/bits/char_traits.h:
 
-/usr/include/bits/floatn.h:
+/usr/lib64/libXfixes.so.3:
+
+/usr/include/c++/15/bits/cpp_type_traits.h:
+
+/usr/include/bits/wctype-wchar.h:
 
 /usr/include/SFML/Audio/SoundSource.hpp:
 
@@ -841,6 +860,12 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlienWorlds/s
 
 /usr/include/bits/types/__fpos_t.h:
 
+/usr/include/c++/15/pstl/glue_algorithm_defs.h:
+
+/usr/include/c++/15/bits/charconv.h:
+
+/usr/include/bits/types/clock_t.h:
+
 /lib64/libmvec.so.1:
 
 /usr/include/SFML/Window/Vulkan.hpp:
@@ -849,11 +874,15 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: /home/rjaradat/Projects/AlienWorlds/s
 
 /usr/include/bits/types/struct_sched_param.h:
 
-/usr/include/c++/15/bits/cxxabi_init_exception.h:
-
 /home/rjaradat/Projects/AlienWorlds/imgui/imconfig-SFML.h:
 
 CMakeFiles/AlienWorlds.dir/src/main.cpp.o:
+
+/usr/include/c++/15/x86_64-redhat-linux/bits/c++io.h:
+
+/home/rjaradat/Projects/AlienWorlds/include/EngineError.hpp:
+
+/usr/include/bits/uintn-identity.h:
 
 /usr/include/c++/15/bits/stl_iterator.h:
 
@@ -861,13 +890,17 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o:
 
 /home/rjaradat/Projects/AlienWorlds/imgui/imconfig.h:
 
+/usr/include/c++/15/bits/cxxabi_forced.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so:
+
+/home/rjaradat/Projects/AlienWorlds/include/Player.hpp:
+
 /lib64/libc.so.6:
 
 /usr/lib64/libopenal.so.1:
 
 /usr/lib64/libfreetype.so.6:
-
-/usr/include/SFML/Graphics/Shape.hpp:
 
 /usr/include/c++/15/bits/stl_iterator_base_types.h:
 
@@ -889,17 +922,7 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o:
 
 /usr/include/SFML/Audio/SoundBufferRecorder.hpp:
 
-/usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h:
-
-/home/rjaradat/Projects/AlienWorlds/include/GameWorld.hpp:
-
-/usr/lib64/libXrandr.so.2:
-
-/usr/include/SFML/Audio/Sound.hpp:
-
-/usr/include/SFML/Audio/Music.hpp:
-
-/usr/include/bits/types/struct_timeval.h:
+/home/rjaradat/Projects/AlienWorlds/include/GameScene.hpp:
 
 /usr/lib64/libGLX.so:
 
@@ -908,8 +931,6 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o:
 /usr/include/c++/15/ext/alloc_traits.h:
 
 /usr/include/SFML/Graphics/CircleShape.hpp:
-
-/usr/lib64/libm.so:
 
 /usr/include/SFML/System/Vector3.hpp:
 
@@ -939,6 +960,10 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o:
 
 /usr/lib64/libXau.so.6:
 
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
 /usr/lib64/libcap.so.2:
 
 /usr/include/c++/15/bits/ostream_insert.h:
@@ -946,6 +971,10 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o:
 /usr/lib64/libOpenGL.so:
 
 /usr/include/bits/types/error_t.h:
+
+/usr/lib64/libm.so:
+
+/home/rjaradat/Projects/AlienWorlds/include/EngineProperties.hpp:
 
 /lib64/libgcc_s.so.1:
 
@@ -961,11 +990,23 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o:
 
 /usr/include/bits/types/struct_tm.h:
 
+/usr/lib64/libXrandr.so.2:
+
+/usr/include/SFML/Audio/Sound.hpp:
+
+/usr/include/SFML/Audio/Music.hpp:
+
+/usr/include/bits/types/struct_timeval.h:
+
 /usr/include/c++/15/initializer_list:
 
 /usr/lib64/libsfml-window.so.2.6.2:
 
 /usr/include/SFML/Window/Export.hpp:
+
+/usr/lib64/libudev.so.1:
+
+/usr/include/SFML/System/MemoryInputStream.hpp:
 
 /usr/include/c++/15/bits/postypes.h:
 
@@ -1003,6 +1044,10 @@ libimgui_lib.a:
 
 /usr/lib64/libc.so:
 
+/home/rjaradat/Projects/AlienWorlds/src/main.cpp:
+
+/usr/include/SFML/System/NonCopyable.hpp:
+
 /usr/include/SFML/Audio/SoundRecorder.hpp:
 
 /home/rjaradat/Projects/AlienWorlds/imgui/imgui-SFML.h:
@@ -1010,8 +1055,6 @@ libimgui_lib.a:
 /usr/include/SFML/Window/Clipboard.hpp:
 
 /home/rjaradat/Projects/AlienWorlds/imgui/imgui.h:
-
-/usr/include/c++/15/bits/concept_check.h:
 
 /usr/include/SFML/Graphics/Vertex.hpp:
 
@@ -1029,6 +1072,14 @@ libimgui_lib.a:
 
 /home/rjaradat/Projects/AlienWorlds/include/AudioManager.hpp:
 
+/usr/include/SFML/System/InputStream.hpp:
+
+/usr/include/SFML/System/Lock.hpp:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/SFML/System/Mutex.hpp:
+
 /usr/include/libintl.h:
 
 /usr/include/bits/endianness.h:
@@ -1036,10 +1087,6 @@ libimgui_lib.a:
 /usr/include/SFML/System/String.hpp:
 
 /usr/include/c++/15/bits/basic_string.h:
-
-/usr/include/bits/wctype-wchar.h:
-
-/usr/include/c++/15/bits/cpp_type_traits.h:
 
 /usr/include/SFML/System/ThreadLocal.hpp:
 
@@ -1115,23 +1162,11 @@ libimgui_lib.a:
 
 /usr/include/SFML/Window/WindowBase.hpp:
 
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/asm-generic/types.h:
-
 /usr/include/asm-generic/errno.h:
 
 /usr/include/SFML/System/Sleep.hpp:
 
 /usr/include/asm/bitsperlong.h:
-
-/usr/include/c++/15/pstl/glue_algorithm_defs.h:
-
-/usr/include/bits/types/clock_t.h:
-
-/usr/include/c++/15/bits/charconv.h:
 
 /usr/include/bits/byteswap.h:
 
@@ -1156,10 +1191,6 @@ libimgui_lib.a:
 /usr/include/SFML/System/Utf.inl:
 
 /usr/include/bits/setjmp.h:
-
-/usr/lib64/libXfixes.so.3:
-
-/usr/include/c++/15/bits/char_traits.h:
 
 /usr/include/SFML/Audio/SoundFileWriter.hpp:
 
@@ -1229,8 +1260,6 @@ libimgui_lib.a:
 
 /usr/include/bits/types/wint_t.h:
 
-/usr/include/bits/uintn-identity.h:
-
 /usr/include/SFML/Window/ContextSettings.hpp:
 
 /usr/include/bits/waitflags.h:
@@ -1276,11 +1305,3 @@ libimgui_lib.a:
 /usr/include/c++/15/bits/streambuf.tcc:
 
 /usr/include/c++/15/bits/basic_string.tcc:
-
-/usr/include/c++/15/x86_64-redhat-linux/bits/c++locale.h:
-
-/usr/include/c++/15/bits/codecvt.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/15/libgcc_s.so:
-
-/usr/include/c++/15/bits/cxxabi_forced.h:

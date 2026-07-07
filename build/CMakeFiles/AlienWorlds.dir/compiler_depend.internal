@@ -63,14 +63,21 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o
  /home/rjaradat/Projects/AlienWorlds/imgui/imgui-SFML_export.h
  /home/rjaradat/Projects/AlienWorlds/imgui/imgui.h
  /home/rjaradat/Projects/AlienWorlds/include/AudioManager.hpp
+ /home/rjaradat/Projects/AlienWorlds/include/Biome.hpp
  /home/rjaradat/Projects/AlienWorlds/include/Engine.hpp
- /home/rjaradat/Projects/AlienWorlds/include/GameWorld.hpp
+ /home/rjaradat/Projects/AlienWorlds/include/EngineError.hpp
+ /home/rjaradat/Projects/AlienWorlds/include/EngineProperties.hpp
+ /home/rjaradat/Projects/AlienWorlds/include/Entity.hpp
+ /home/rjaradat/Projects/AlienWorlds/include/GameMenu.hpp
+ /home/rjaradat/Projects/AlienWorlds/include/GameScene.hpp
  /home/rjaradat/Projects/AlienWorlds/include/Light.hpp
  /home/rjaradat/Projects/AlienWorlds/include/Object.hpp
+ /home/rjaradat/Projects/AlienWorlds/include/Player.hpp
  /home/rjaradat/Projects/AlienWorlds/include/Renderer.hpp
  /home/rjaradat/Projects/AlienWorlds/include/ResourceManager.hpp
  /home/rjaradat/Projects/AlienWorlds/include/Scene.hpp
  /home/rjaradat/Projects/AlienWorlds/include/SceneManager.hpp
+ /home/rjaradat/Projects/AlienWorlds/include/ShallowWaters.hpp
  /home/rjaradat/Projects/AlienWorlds/include/inputManager.hpp
  /usr/include/SFML/Audio.hpp
  /usr/include/SFML/Audio/AlResource.hpp

@@ -267,14 +267,22 @@ CMakeFiles/AlienWorlds.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/atomic_base.h \
  /usr/include/c++/15/bits/atomic_lockfree_defines.h \
  /usr/include/c++/15/backward/auto_ptr.h \
- /usr/include/c++/15/pstl/glue_memory_defs.h /usr/include/c++/15/iostream \
+ /usr/include/c++/15/pstl/glue_memory_defs.h \
+ /home/rjaradat/Projects/AlienWorlds/include/EngineError.hpp \
+ /home/rjaradat/Projects/AlienWorlds/include/EngineProperties.hpp \
  /home/rjaradat/Projects/AlienWorlds/include/SceneManager.hpp \
  /usr/include/c++/15/cassert \
  /home/rjaradat/Projects/AlienWorlds/include/Scene.hpp \
  /home/rjaradat/Projects/AlienWorlds/imgui/imgui-SFML.h \
  /home/rjaradat/Projects/AlienWorlds/include/Renderer.hpp \
+ /usr/include/c++/15/iostream \
  /home/rjaradat/Projects/AlienWorlds/include/Light.hpp \
  /home/rjaradat/Projects/AlienWorlds/include/Object.hpp \
  /home/rjaradat/Projects/AlienWorlds/include/inputManager.hpp \
  /home/rjaradat/Projects/AlienWorlds/include/AudioManager.hpp \
- /home/rjaradat/Projects/AlienWorlds/include/GameWorld.hpp
+ /home/rjaradat/Projects/AlienWorlds/include/GameMenu.hpp \
+ /home/rjaradat/Projects/AlienWorlds/include/GameScene.hpp \
+ /home/rjaradat/Projects/AlienWorlds/include/ShallowWaters.hpp \
+ /home/rjaradat/Projects/AlienWorlds/include/Biome.hpp \
+ /home/rjaradat/Projects/AlienWorlds/include/Player.hpp \
+ /home/rjaradat/Projects/AlienWorlds/include/Entity.hpp

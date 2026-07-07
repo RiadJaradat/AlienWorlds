@@ -3,6 +3,8 @@
 #include <SFML/Graphics.hpp>
 
 #include "EngineError.hpp"
+#include "inputManager.hpp"
+#include "AudioManager.hpp"
 
 class Object
 {
@@ -12,10 +14,11 @@ private:
     sf::Texture *texture = nullptr;
 
 public:
-    virtual void update(float dt) = 0;
+    Light light; 
+    virtual void update(InputManager &InputManager, AudioManager &audioManager, float dt) = 0;
 
     Object()
-    { 
+    {
         sprt.setPosition(bounds.getPosition());
         sprt.setOrigin(bounds.getOrigin());
     }
@@ -27,12 +30,12 @@ public:
         return bounds.getGlobalBounds();
     }
 
-    const sf::Sprite *getSprite() const 
+    const sf::Sprite *getSprite() const
     {
         return &sprt;
     }
 
-    sf::Vector2f getPosition() const 
+    sf::Vector2f getPosition() const
     {
         if (bounds.getPosition() != sprt.getPosition())
             throw EngineError("Bad bound and sprite positioning");
@@ -45,6 +48,7 @@ public:
 
         bounds.setPosition(newPos);
         sprt.setPosition(newPos);
+        light.position = newPos;
     }
 
     void setOrigin(sf::Vector2f newOrigin)

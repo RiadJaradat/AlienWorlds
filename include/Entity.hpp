@@ -3,6 +3,9 @@
 #include <SFML/Graphics.hpp>
 
 #include "Object.hpp"
+#include "inputManager.hpp"
+#include "AudioManager.hpp"
+#include "Light.hpp"
 
 #define Gravity 9.8
 #define Multiplier 100
@@ -19,9 +22,9 @@ public:
 
     ~Entity() = default;
 
-    virtual void onUpdate(float dt) = 0;
+    virtual void onUpdate(InputManager &inputManager, AudioManager &audioManager, float dt) = 0;
 
-    void update(float dt) override
+    void update(InputManager &inputManager, AudioManager &audioManager, float dt) override
     {
         m_velocity.y += Gravity * Multiplier * dt;
 
@@ -29,6 +32,6 @@ public:
         position += m_velocity * dt;
         setPosition(position);
 
-        onUpdate(dt);
+        onUpdate(inputManager, audioManager, dt);
     }
 };
